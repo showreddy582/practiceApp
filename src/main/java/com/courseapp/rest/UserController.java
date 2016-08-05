@@ -1,5 +1,7 @@
 package com.courseapp.rest;
 
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.courseapp.domain.Course;
 import com.courseapp.domain.User;
-import com.courseapp.exception.UserNotFoundException;
-import com.courseapp.repositories.UserRepository;
 import com.courseapp.service.UserService;
 
 //first apply @valid annotation for the object to be validated
@@ -28,25 +29,47 @@ import com.courseapp.service.UserService;
 public class UserController {
 
 	@Autowired
-	private UserRepository userRepository;
-	
-	@Autowired
 	private UserService userService;
-	
+
+	//create user
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<User> createUser(@Valid @RequestBody User user) {
-		User savedUser = userRepository.save(user);
-		return new ResponseEntity<User>(savedUser, HttpStatus.CREATED);
+	public ResponseEntity<User> create(@Valid @RequestBody User user) throws Exception {
+		return new ResponseEntity<User>(userService.save(user), HttpStatus.CREATED);
 	}
-	
-	@RequestMapping(value="{userName}",method=RequestMethod.DELETE)
-	public ResponseEntity<HttpStatus>delete(@PathVariable("userName")String userName) throws Exception{
-		if(!userName.contains(".com")){
-			userName +=".com";
+
+	//update user
+	@RequestMapping(method = RequestMethod.PUT)
+	public ResponseEntity<User> update(@Valid @RequestBody User user) throws Exception {
+		return new ResponseEntity<User>(userService.save(user), HttpStatus.OK);
+	}
+
+	//delete user
+	@RequestMapping(value = "{userName}", method = RequestMethod.DELETE)
+	public ResponseEntity<HttpStatus> delete(@PathVariable("userName") String userName) throws Exception {
+		if (!userName.contains(".com")) {
+			userName += ".com";
 		}
-		
+
 		userService.delete(userName);
 		return new ResponseEntity<HttpStatus>(HttpStatus.OK);
 	}
-	
+	//get user by username	
+	@RequestMapping(value = "{userName}", method = RequestMethod.GET)
+	public ResponseEntity<User> getByUserName(@PathVariable("userName") String userName) throws Exception {
+		if (!userName.contains(".com")) {
+			userName += ".com";
+		}
+
+		return new ResponseEntity<User>(userService.findUserByName(userName), HttpStatus.OK);
+	}
+
+	//get all courses for a user
+	@RequestMapping(value = "/courses/{userName}", method = RequestMethod.GET)
+	public ResponseEntity<List<Course>> getAllCoursesForaUser(@PathVariable("userName") String userName)throws Exception {
+		if (!userName.contains(".com")) {
+			userName += ".com";
+		}
+		return new ResponseEntity<List<Course>>(userService.findUserByName(userName).getCourses(), HttpStatus.OK);
+	}
+
 }

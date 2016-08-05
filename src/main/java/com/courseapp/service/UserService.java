@@ -21,4 +21,12 @@ public class UserService {
 			userRepository.delete(userName);
 		}
 	}
+	
+	public User save(User user) throws Exception{
+		return userRepository.save(user);
+	}
+	
+	public User findUserByName(String userName) throws Exception{
+		return userRepository.findOne(userName);
+	}
 }

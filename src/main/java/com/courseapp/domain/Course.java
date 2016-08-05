@@ -1,6 +1,5 @@
 package com.courseapp.domain;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table
-public class Course implements Serializable{
+public class Course extends BaseEntity{
 
 	private static final long serialVersionUID = 1L;
 

@@ -1,6 +1,5 @@
 package com.courseapp.domain;
 
-import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,20 +8,17 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import com.courseapp.rest.validation.Phone;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table
-public class User implements Serializable{
+public class User extends BaseEntity{
 	
 	private static final long serialVersionUID = 1L;
 
