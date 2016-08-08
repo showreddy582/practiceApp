@@ -33,7 +33,7 @@ public class UserController {
 
 	//create user
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<User> create(@Valid @RequestBody User user) throws Exception {
+	public ResponseEntity<User> create(@RequestBody User user) throws Exception {
 		return new ResponseEntity<User>(userService.save(user), HttpStatus.CREATED);
 	}
 
@@ -44,15 +44,19 @@ public class UserController {
 	}
 
 	//delete user
-	@RequestMapping(value = "{userName}", method = RequestMethod.DELETE)
-	public ResponseEntity<HttpStatus> delete(@PathVariable("userName") String userName) throws Exception {
-		if (!userName.contains(".com")) {
-			userName += ".com";
-		}
-
-		userService.delete(userName);
+	@RequestMapping(value = "{userId}", method = RequestMethod.DELETE)
+	public ResponseEntity<HttpStatus> delete(@PathVariable("userId") Long userId) throws Exception {
+		userService.delete(userId);
 		return new ResponseEntity<HttpStatus>(HttpStatus.OK);
 	}
+	
+	//get user by userId	
+	@RequestMapping(value = "{userId}", method = RequestMethod.GET)
+	public ResponseEntity<User> getByUserName(@PathVariable("userId") Long userId) throws Exception {
+
+		return new ResponseEntity<User>(userService.findByUserId(userId), HttpStatus.OK);
+	}
+
 	//get user by username	
 	@RequestMapping(value = "{userName}", method = RequestMethod.GET)
 	public ResponseEntity<User> getByUserName(@PathVariable("userName") String userName) throws Exception {
@@ -64,12 +68,9 @@ public class UserController {
 	}
 
 	//get all courses for a user
-	@RequestMapping(value = "/courses/{userName}", method = RequestMethod.GET)
-	public ResponseEntity<List<Course>> getAllCoursesForaUser(@PathVariable("userName") String userName)throws Exception {
-		if (!userName.contains(".com")) {
-			userName += ".com";
-		}
-		return new ResponseEntity<List<Course>>(userService.findUserByName(userName).getCourses(), HttpStatus.OK);
+	@RequestMapping(value = "courses/{userId}", method = RequestMethod.GET)
+	public ResponseEntity<List<Course>> getAllCoursesForaUser(@PathVariable("userId") Long userId)throws Exception {
+		return new ResponseEntity<List<Course>>(userService.findByUserId(userId).getCourses(), HttpStatus.OK);
 	}
 
 }

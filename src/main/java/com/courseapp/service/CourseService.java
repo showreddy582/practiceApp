@@ -19,16 +19,16 @@ public class CourseService {
 	private UserRepository userRepository;
 
 	public Course saveCourse(Course course) throws Exception{
-		User user = userRepository.findOne(course.getAuthor());
+		User user = userRepository.findByUserName(course.getAuthor());
 		course.getRegisteredUsers().add(user);
 		return courseRepository.save(course);
 	}
 	
-	public Course getCourseById(int courseId) throws Exception{
+	public Course getCourseById(Long courseId) throws Exception{
 		return courseRepository.findOne(courseId);
 	}
 	
-	public void deleteCourse(int courseId) throws Exception{
+	public void deleteCourse(Long courseId) throws Exception{
 		Course course = courseRepository.findOne(courseId);
 		if(course == null){
 			throw new Exception("Course Not found");
@@ -36,27 +36,27 @@ public class CourseService {
 		courseRepository.delete(course);
 	}
 	
-	public Course addUserToCourse(int courseId, String userId) throws Exception{
+	public Course addUserToCourse(Long courseId, Long userId) throws Exception{
 		Course course = getCourseById(courseId);
 		User user = userRepository.findOne(userId);
 		course.getRegisteredUsers().add(user);
 		return courseRepository.save(course);
 	}
 
-	public Course removeUserFromCourse(int courseId, String userId) throws Exception{
+	public Course removeUserFromCourse(Long courseId, Long userId) throws Exception{
 		Course course = getCourseById(courseId);
 		User user = userRepository.findOne(userId);
 		course.getRegisteredUsers().remove(user);
 		return courseRepository.save(course);
 	}
 
-	public Course addTopicToCourse(Integer courseId, Topic topic) throws Exception {
+	public Course addTopicToCourse(Long courseId, Topic topic) throws Exception {
 		Course course = getCourseById(courseId);
 		course.getTopics().add(topic);
 		return courseRepository.save(course);
 	}
 
-	public Course removeTopicFromCourse(Integer courseId, Topic topic) throws Exception {
+	public Course removeTopicFromCourse(Long courseId, Topic topic) throws Exception {
 		Course course = getCourseById(courseId);
 		course.getTopics().remove(topic);
 		return courseRepository.save(course);

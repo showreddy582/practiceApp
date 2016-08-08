@@ -26,7 +26,7 @@ public class Course extends BaseEntity{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int courseId;
+	private Long courseId;
 	private String courseName;
 	private String author;
 	
@@ -35,7 +35,7 @@ public class Course extends BaseEntity{
 
 	@JsonIgnore
 	@ManyToMany(cascade = { CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-	@JoinTable(name = "course_user", joinColumns = @JoinColumn(name = "course_id", referencedColumnName = "courseId"), inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "userName"))
+	@JoinTable(name = "course_user", joinColumns = @JoinColumn(name = "course_id", referencedColumnName = "courseId"), inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "userId"))
 	private List<User> registeredUsers = new ArrayList<>();
 
 	@JsonIgnore
@@ -58,11 +58,11 @@ public class Course extends BaseEntity{
 		this.topics = topics;
 	}
 
-	public int getCourseId() {
+	public Long getCourseId() {
 		return courseId;
 	}
 
-	public void setCourseId(int courseId) {
+	public void setCourseId(Long courseId) {
 		this.courseId = courseId;
 	}
 
@@ -94,7 +94,7 @@ public class Course extends BaseEntity{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + courseId;
+		result = prime * result + ((courseId == null) ? 0 : courseId.hashCode());
 		return result;
 	}
 
@@ -107,13 +107,12 @@ public class Course extends BaseEntity{
 		if (getClass() != obj.getClass())
 			return false;
 		Course other = (Course) obj;
-		if (courseId != other.courseId)
+		if (courseId == null) {
+			if (other.courseId != null)
+				return false;
+		} else if (!courseId.equals(other.courseId))
 			return false;
 		return true;
 	}
-	
-	
-	
-	
 
 }

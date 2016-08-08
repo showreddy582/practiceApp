@@ -1,7 +1,5 @@
 package com.courseapp.rest;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,14 +19,16 @@ public class LoginController {
 	private UserService userService;
 
 	@RequestMapping(method = RequestMethod.POST)
-	public ResponseEntity<User> create(@Valid @RequestBody User user) throws Exception {
+	public ResponseEntity<User> create(@RequestBody User user) throws Exception {
 		User dbUser = userService.findUserByName(user.getUserName());
 		if(dbUser != null){
 			if(dbUser.getPassword().equals(user.getPassword())){
 				return new ResponseEntity<User>(dbUser, HttpStatus.OK);
+			}else{
+				return new ResponseEntity<User>(user, HttpStatus.FORBIDDEN);
 			}
 		}
-		return new ResponseEntity<User>(user, HttpStatus.OK);
+		return new ResponseEntity<User>(user, HttpStatus.FORBIDDEN);
 	}
  
 	

@@ -1,10 +1,13 @@
 package com.courseapp.domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
@@ -23,19 +26,22 @@ public class User extends BaseEntity{
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@Email(message="Expecting email for user name")
-	@NotBlank(message="User name should not be blank")
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long userId;
+
+	@Email(message="{error.username.invalid}")
+	@NotBlank(message="{error.username.notblank}")
 	private String userName;
 	
-	@NotBlank(message="First name should not be blank")
+	@NotBlank(message="{error.fname.notblank}")
 	private String fName;
 	
-	@NotBlank(message="Last name should not be blank")
+	@NotBlank(message="{error.lname.notblank}")
 	private String lName;
 	private String mName;
 	
 	//@Length(min=6, max=10,message="Password length should have a minimum of 6 characters and max of 10 characters")
-	@NotBlank(message="Password is required")
+	@NotBlank(message="{error.pword.notblank}")
 	@Pattern(regexp="((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,10})", message="Password should have atleast 1 digit, 1 lowercase, 1 uppercase and with a min length of 6 and max length of 10")
 	private String password;
 	
@@ -50,6 +56,33 @@ public class User extends BaseEntity{
 	
 	@Phone
 	private String phoneNumber;
+	
+	public User(){
+		
+	}
+	
+	public User(Long userId, String userName, String fName, String lName, String mName, String password, LocalDate dob,
+			String phoneNumber, LocalDateTime createdDate, LocalDateTime updatedDate) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.fName = fName;
+		this.lName = lName;
+		this.mName = mName;
+		this.password = password;
+		this.dob = dob;
+		this.phoneNumber = phoneNumber;
+		this.setCreatedDate(createdDate);
+		this.setUpdatedDate(updatedDate);
+	}
+
+	public Long getUserId() {
+		return userId;
+	}
+	
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
 	
 	public String getPhoneNumber() {
 		return phoneNumber;
@@ -119,7 +152,7 @@ public class User extends BaseEntity{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((userName == null) ? 0 : userName.hashCode());
+		result = prime * result + ((userId == null) ? 0 : userId.hashCode());
 		return result;
 	}
 
@@ -132,17 +165,19 @@ public class User extends BaseEntity{
 		if (getClass() != obj.getClass())
 			return false;
 		User other = (User) obj;
-		if (userName == null) {
-			if (other.userName != null)
+		if (userId == null) {
+			if (other.userId != null)
 				return false;
-		} else if (!userName.equals(other.userName))
+		} else if (!userId.equals(other.userId))
 			return false;
 		return true;
 	}
 
 	@Override
 	public String toString() {
-		return "User [userName=" + userName + ", fName=" + fName + ", lName=" + lName + ", mName=" + mName + "]";
+		return "User [userId=" + userId + ", userName=" + userName + ", fName=" + fName + ", lName=" + lName
+				+ ", mName=" + mName + ", password=" + password + ", dob=" + dob + ", phoneNumber=" + phoneNumber + "]";
 	}
 
+	
 }

@@ -20,7 +20,12 @@ public class CourseController {
 	@Autowired
 	private CourseService courseService;
 
-	//create new course
+	/**
+	 * Creates a new course
+	 * @param course
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Course> create(@RequestBody Course course) throws Exception {
 		return new ResponseEntity<Course>(courseService.saveCourse(course), HttpStatus.CREATED);
@@ -34,39 +39,39 @@ public class CourseController {
 
 	//get course by id
 	@RequestMapping(value="{courseId}",method = RequestMethod.GET)
-	public ResponseEntity<Course> update(@PathVariable("courseId") Integer courseId) throws Exception {
+	public ResponseEntity<Course> update(@PathVariable("courseId") Long courseId) throws Exception {
 		return new ResponseEntity<Course>(courseService.getCourseById(courseId), HttpStatus.OK);
 	}
 
 	//delete course by id
 	@RequestMapping(value="{courseId}",method = RequestMethod.DELETE)
-	public ResponseEntity<HttpStatus> delete(@PathVariable("courseId") Integer courseId) throws Exception {
+	public ResponseEntity<HttpStatus> delete(@PathVariable("courseId") Long courseId) throws Exception {
 		courseService.deleteCourse(courseId);
 		return new ResponseEntity<HttpStatus>(HttpStatus.OK);
 	}
 	
 	//add User to course
 	@RequestMapping(value="{courseId}/users/{userId}",method = RequestMethod.PUT)
-	public ResponseEntity<Course> addUserToCourse(@PathVariable("courseId")Integer courseId, @PathVariable("userId")String userId) throws Exception {
+	public ResponseEntity<Course> addUserToCourse(@PathVariable("courseId")Long courseId, @PathVariable("userId")Long userId) throws Exception {
 		return new ResponseEntity<Course>(courseService.addUserToCourse(courseId, userId), HttpStatus.OK);
 	}
 	
 	//remove User from course
 	@RequestMapping(value="{courseId}/users/{userId}",method = RequestMethod.DELETE)
-	public ResponseEntity<Course> removeUserFromCourse(@PathVariable("courseId")Integer courseId, @PathVariable("userId")String userId) throws Exception {
+	public ResponseEntity<Course> removeUserFromCourse(@PathVariable("courseId")Long courseId, @PathVariable("userId")Long userId) throws Exception {
 		return new ResponseEntity<Course>(courseService.removeUserFromCourse(courseId, userId), HttpStatus.OK);
 	}
 	
 	//add Topic to a course
 	@RequestMapping(value="{courseId}/topic",method = RequestMethod.PUT)
-	public ResponseEntity<Course> addTopicToCourse(@PathVariable("courseId")Integer courseId, @RequestBody Topic topic) throws Exception {
+	public ResponseEntity<Course> addTopicToCourse(@PathVariable("courseId")Long courseId, @RequestBody Topic topic) throws Exception {
 		
 		return new ResponseEntity<Course>(courseService.addTopicToCourse(courseId, topic), HttpStatus.OK);
 	}
 	
 	//remove Topic from a course
 	@RequestMapping(value="{courseId}/topic",method = RequestMethod.DELETE)
-	public ResponseEntity<Course> removeTopicFromACourse(@PathVariable("courseId")Integer courseId, @RequestBody Topic topic) throws Exception {
+	public ResponseEntity<Course> removeTopicFromACourse(@PathVariable("courseId")Long courseId, @RequestBody Topic topic) throws Exception {
 		
 		return new ResponseEntity<Course>(courseService.removeTopicFromCourse(courseId, topic), HttpStatus.OK);
 	}

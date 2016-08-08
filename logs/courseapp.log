@@ -1,0 +1,170 @@
+2016-08-08 09:28:46.744  INFO 1902 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 1902 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-08-08 09:28:46.753  INFO 1902 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-08-08 09:28:46.932  INFO 1902 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 09:28:46 CDT 2016]; root of context hierarchy
+2016-08-08 09:28:51.156  INFO 1902 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$84a636b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-08-08 09:28:52.281  INFO 1902 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-08-08 09:28:52.314  INFO 1902 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-08-08 09:28:52.317  INFO 1902 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-08-08 09:28:52.546  INFO 1902 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-08-08 09:28:52.546  INFO 1902 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5623 ms
+2016-08-08 09:28:52.939  INFO 1902 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-08-08 09:28:52.948  INFO 1902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-08-08 09:28:52.949  INFO 1902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-08-08 09:28:52.949  INFO 1902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-08-08 09:28:52.950  INFO 1902 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-08-08 09:28:53.656  INFO 1902 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-08-08 09:28:53.693  INFO 1902 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-08-08 09:28:53.918  INFO 1902 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-08-08 09:28:53.921  INFO 1902 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-08-08 09:28:53.924  INFO 1902 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-08-08 09:28:54.039  INFO 1902 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-08-08 09:28:54.934  INFO 1902 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-08-08 09:28:55.907  INFO 1902 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-08-08 09:28:57.080  INFO 1902 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-08-08 09:28:57.799  INFO 1902 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-08-08 09:28:58.879  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 09:28:46 CDT 2016]; root of context hierarchy
+2016-08-08 09:28:59.146  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.148  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(com.courseapp.domain.Course) throws java.lang.Exception
+2016-08-08 09:28:59.149  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.CourseController.delete(java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.149  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.create(com.courseapp.domain.Course) throws java.lang.Exception
+2016-08-08 09:28:59.150  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addUserToCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.151  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeUserFromCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.153  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addTopicToCourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-08-08 09:28:59.154  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeTopicFromACourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-08-08 09:28:59.155  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/authenticate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.LoginController.create(com.courseapp.domain.User) throws java.lang.Exception
+2016-08-08 09:28:59.162  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.update(com.courseapp.domain.User) throws java.lang.Exception
+2016-08-08 09:28:59.163  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.UserController.delete(java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.164  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.create(com.courseapp.domain.User) throws java.lang.Exception
+2016-08-08 09:28:59.164  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.String) throws java.lang.Exception
+2016-08-08 09:28:59.166  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.167  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/courses/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.UserController.getAllCoursesForaUser(java.lang.Long) throws java.lang.Exception
+2016-08-08 09:28:59.177  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-08-08 09:28:59.178  INFO 1902 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-08 09:28:59.291  INFO 1902 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 09:28:59.292  INFO 1902 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 09:28:59.350  INFO 1902 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorHandlingAdvice
+2016-08-08 09:28:59.437  INFO 1902 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 09:29:00.415  INFO 1902 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-08-08 09:29:00.593  INFO 1902 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-08-08 09:29:00.603  INFO 1902 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 15.115 seconds (JVM running for 16.193)
+2016-08-08 10:17:21.845  INFO 2454 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 2454 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-08-08 10:17:21.856  INFO 2454 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-08-08 10:17:22.082  INFO 2454 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 10:17:22 CDT 2016]; root of context hierarchy
+2016-08-08 10:17:25.205  INFO 2454 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47565dad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-08-08 10:17:26.598  INFO 2454 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-08-08 10:17:26.638  INFO 2454 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-08-08 10:17:26.643  INFO 2454 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-08-08 10:17:26.941  INFO 2454 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-08-08 10:17:26.941  INFO 2454 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4872 ms
+2016-08-08 10:17:27.270  INFO 2454 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-08-08 10:17:27.279  INFO 2454 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-08-08 10:17:27.280  INFO 2454 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-08-08 10:17:27.280  INFO 2454 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-08-08 10:17:27.280  INFO 2454 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-08-08 10:17:27.853  INFO 2454 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-08-08 10:17:27.899  INFO 2454 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-08-08 10:17:28.245  INFO 2454 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-08-08 10:17:28.254  INFO 2454 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-08-08 10:17:28.261  INFO 2454 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-08-08 10:17:28.433  INFO 2454 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-08-08 10:17:29.453  INFO 2454 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-08-08 10:17:29.922  INFO 2454 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-08-08 10:17:30.001  INFO 2454 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-08-08 10:17:30.809  INFO 2454 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 10:17:22 CDT 2016]; root of context hierarchy
+2016-08-08 10:17:31.040  INFO 2454 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-08-08 10:17:31.044  INFO 2454 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-08 10:17:31.148  INFO 2454 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:17:31.148  INFO 2454 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:17:31.267  INFO 2454 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:17:32.432  INFO 2454 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-08-08 10:17:32.639  INFO 2454 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-08-08 10:17:32.654  INFO 2454 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 11.869 seconds (JVM running for 13.009)
+2016-08-08 10:18:36.757  INFO 2462 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 2462 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-08-08 10:18:36.767  INFO 2462 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-08-08 10:18:36.935  INFO 2462 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 10:18:36 CDT 2016]; root of context hierarchy
+2016-08-08 10:18:40.143  INFO 2462 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$78089e80] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-08-08 10:18:41.411  INFO 2462 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-08-08 10:18:41.439  INFO 2462 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-08-08 10:18:41.443  INFO 2462 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-08-08 10:18:41.677  INFO 2462 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-08-08 10:18:41.678  INFO 2462 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4750 ms
+2016-08-08 10:18:42.066  INFO 2462 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-08-08 10:18:42.077  INFO 2462 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-08-08 10:18:42.081  INFO 2462 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-08-08 10:18:42.082  INFO 2462 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-08-08 10:18:42.082  INFO 2462 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-08-08 10:18:42.677  INFO 2462 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-08-08 10:18:42.728  INFO 2462 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-08-08 10:18:42.975  INFO 2462 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-08-08 10:18:42.978  INFO 2462 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-08-08 10:18:42.981  INFO 2462 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-08-08 10:18:43.107  INFO 2462 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-08-08 10:18:44.126  INFO 2462 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-08-08 10:18:44.507  INFO 2462 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-08-08 10:18:44.574  INFO 2462 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-08-08 10:18:45.366  INFO 2462 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 10:18:36 CDT 2016]; root of context hierarchy
+2016-08-08 10:18:45.583  INFO 2462 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-08-08 10:18:45.585  INFO 2462 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-08 10:18:45.680  INFO 2462 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:18:45.680  INFO 2462 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:18:45.803  INFO 2462 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:18:47.425  INFO 2462 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-08-08 10:18:47.605  INFO 2462 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-08-08 10:18:47.617  INFO 2462 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 11.831 seconds (JVM running for 13.02)
+2016-08-08 10:20:07.087  INFO 2476 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 2476 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-08-08 10:20:07.095  INFO 2476 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-08-08 10:20:07.268  INFO 2476 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 10:20:07 CDT 2016]; root of context hierarchy
+2016-08-08 10:20:10.640  INFO 2476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4579098] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-08-08 10:20:11.787  INFO 2476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-08-08 10:20:11.810  INFO 2476 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-08-08 10:20:11.812  INFO 2476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-08-08 10:20:12.090  INFO 2476 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-08-08 10:20:12.090  INFO 2476 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4827 ms
+2016-08-08 10:20:12.446  INFO 2476 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-08-08 10:20:12.454  INFO 2476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-08-08 10:20:12.455  INFO 2476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-08-08 10:20:12.456  INFO 2476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-08-08 10:20:12.456  INFO 2476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-08-08 10:20:13.097  INFO 2476 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-08-08 10:20:13.132  INFO 2476 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-08-08 10:20:13.335  INFO 2476 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-08-08 10:20:13.339  INFO 2476 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-08-08 10:20:13.343  INFO 2476 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-08-08 10:20:13.449  INFO 2476 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-08-08 10:20:14.423  INFO 2476 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-08-08 10:20:15.787  INFO 2476 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-08-08 10:20:16.907  INFO 2476 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-08-08 10:20:17.694  INFO 2476 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-08-08 10:20:18.904  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2cc3ad05: startup date [Mon Aug 08 10:20:07 CDT 2016]; root of context hierarchy
+2016-08-08 10:20:19.150  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.152  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(com.courseapp.domain.Course) throws java.lang.Exception
+2016-08-08 10:20:19.153  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.CourseController.delete(java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.154  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.create(com.courseapp.domain.Course) throws java.lang.Exception
+2016-08-08 10:20:19.154  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addUserToCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.155  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeUserFromCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.156  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addTopicToCourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-08-08 10:20:19.157  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeTopicFromACourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-08-08 10:20:19.159  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/authenticate],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.LoginController.create(com.courseapp.domain.User) throws java.lang.Exception
+2016-08-08 10:20:19.163  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.update(com.courseapp.domain.User) throws java.lang.Exception
+2016-08-08 10:20:19.164  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.UserController.delete(java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.165  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.create(com.courseapp.domain.User) throws java.lang.Exception
+2016-08-08 10:20:19.166  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.String) throws java.lang.Exception
+2016-08-08 10:20:19.167  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.168  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/courses/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.UserController.getAllCoursesForaUser(java.lang.Long) throws java.lang.Exception
+2016-08-08 10:20:19.179  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-08-08 10:20:19.180  INFO 2476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-08-08 10:20:19.355  INFO 2476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:20:19.356  INFO 2476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:20:19.419  INFO 2476 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorHandlingAdvice
+2016-08-08 10:20:19.566  INFO 2476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-08-08 10:20:20.606  INFO 2476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-08-08 10:20:20.871  INFO 2476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-08-08 10:20:20.920  INFO 2476 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 14.825 seconds (JVM running for 15.809)
