@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -45,8 +46,9 @@ public class User extends BaseEntity{
 	@Pattern(regexp="((?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,10})", message="Password should have atleast 1 digit, 1 lowercase, 1 uppercase and with a min length of 6 and max length of 10")
 	private String password;
 	
+	//if we delete user - user to course relationship should be deleted as well
 	@JsonIgnore
-	@ManyToMany(mappedBy="registeredUsers")
+	@ManyToMany(mappedBy="registeredUsers", cascade=CascadeType.ALL)
 	private List<Course> courses = new ArrayList<>();
 	
 	//@DateTimeFormat(pattern="MM/dd/yyyy")

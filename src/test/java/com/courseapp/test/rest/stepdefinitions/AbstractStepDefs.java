@@ -1,4 +1,4 @@
-package com.courseapp.test.stepdefs;
+package com.courseapp.test.rest.stepdefinitions;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

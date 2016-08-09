@@ -52,12 +52,14 @@ public class CourseService {
 
 	public Course addTopicToCourse(Long courseId, Topic topic) throws Exception {
 		Course course = getCourseById(courseId);
+		topic.setCourse(course);
 		course.getTopics().add(topic);
 		return courseRepository.save(course);
 	}
 
 	public Course removeTopicFromCourse(Long courseId, Topic topic) throws Exception {
 		Course course = getCourseById(courseId);
+		topic.setCourse(course);
 		course.getTopics().remove(topic);
 		return courseRepository.save(course);
 	}

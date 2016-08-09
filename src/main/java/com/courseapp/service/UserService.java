@@ -32,8 +32,8 @@ public class UserService {
 	public User save(User user) throws Exception {
 		if (user.getUserId() == null) {
 			user.setCreatedDate(LocalDateTime.now());
-			String pasword = user.getPassword();
-			user.setPassword(Base64.getEncoder().encodeToString(pasword.getBytes()));
+			//String pasword = user.getPassword();
+			//user.setPassword(Base64.getEncoder().encodeToString(pasword.getBytes()));
 		}
 		user.setUpdatedDate(LocalDateTime.now());
 		return userRepository.save(user);

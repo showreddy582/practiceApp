@@ -1,4 +1,4 @@
-package com.courseapp.test.stepdefs;
+package com.courseapp.test.rest.stepdefinitions;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

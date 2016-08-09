@@ -1,4 +1,4 @@
-Feature: User Resource Integration Test
+Feature: User Resource Test
 
 Scenario: create a user
     Given the web context is set
