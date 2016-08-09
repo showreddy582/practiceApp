@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import javax.persistence.MappedSuperclass;
+import javax.persistence.Version;
 
 @MappedSuperclass
 public abstract class BaseEntity implements Serializable{
@@ -13,6 +14,9 @@ public abstract class BaseEntity implements Serializable{
 	private LocalDateTime createdDate;
 
 	private LocalDateTime updatedDate;
+	
+	@Version
+	private Integer version;
 
 	public LocalDateTime getCreatedDate() {
 		return createdDate;
@@ -28,6 +32,14 @@ public abstract class BaseEntity implements Serializable{
 
 	public void setUpdatedDate(LocalDateTime updatedDate) {
 		this.updatedDate = updatedDate;
+	}
+	
+	public Integer getVersion() {
+		return version;
+	}
+	
+	public void setVersion(Integer version) {
+		this.version = version;
 	}
 
 }
