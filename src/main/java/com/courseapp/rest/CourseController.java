@@ -16,7 +16,7 @@ import com.courseapp.service.CourseService;
 
 @RestController
 @RequestMapping("course")
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 public class CourseController {
 
 	@Autowired
