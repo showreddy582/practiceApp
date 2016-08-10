@@ -1,7 +1,5 @@
 package com.courseapp.service;
 
-import java.time.LocalDateTime;
-import java.util.Base64;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +10,8 @@ import com.courseapp.exception.UserNotFoundException;
 import com.courseapp.repositories.UserRepository;
 
 /**
- * @author appi_usa This is a user service class which handles crud operations
+ * @author appi_usa 
+ * This is a user service class which handles crud operations
  */
 @Service
 public class UserService {
@@ -30,12 +29,12 @@ public class UserService {
 	}
 
 	public User save(User user) throws Exception {
-		if (user.getUserId() == null) {
-			user.setCreatedDate(LocalDateTime.now());
-			//String pasword = user.getPassword();
-			//user.setPassword(Base64.getEncoder().encodeToString(pasword.getBytes()));
+		if(user.getUserId() != null){
+			User dbUser = findByUserId(user.getUserId());
+			if (dbUser == null) {
+				throw new UserNotFoundException("User with " + user.getUserId() + "Not found");
+			}
 		}
-		user.setUpdatedDate(LocalDateTime.now());
 		return userRepository.save(user);
 	}
 

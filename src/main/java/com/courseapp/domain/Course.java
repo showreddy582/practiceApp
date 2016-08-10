@@ -1,5 +1,7 @@
 package com.courseapp.domain;
 
+import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,13 +16,29 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 @Entity
 @Table
-public class Course extends BaseEntity{
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode(of = { "courseId" }, callSuper = false)
+@ToString(exclude = { "registeredUsers", "topics" })
+@Builder
+public class Course implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -29,7 +47,7 @@ public class Course extends BaseEntity{
 	private Long courseId;
 	private String courseName;
 	private String author;
-	
+
 	@Enumerated(EnumType.STRING)
 	private SkillLevel level;
 
@@ -39,80 +57,25 @@ public class Course extends BaseEntity{
 	private List<User> registeredUsers = new ArrayList<>();
 
 	@JsonIgnore
-	@OneToMany(mappedBy="course", cascade=CascadeType.ALL)
+	@OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
 	private List<Topic> topics = new ArrayList<>();
 
-	public SkillLevel getLevel() {
-		return level;
+	private LocalDateTime createdDate;
+	
+	@Version
+	private LocalDateTime updatedDate;
+	
+	@PrePersist
+	protected void onCreate(){
+		this.createdDate = LocalDateTime.now();
+		this.updatedDate = LocalDateTime.now();
 	}
 	
-	public void setLevel(SkillLevel level) {
-		this.level = level;
-	}
-	
-	public List<Topic> getTopics() {
-		return topics;
-	}
+	@PreUpdate
+    protected void onUpdate() {
+		this.updatedDate = LocalDateTime.now();
+    }
 
-	public void setTopics(List<Topic> topics) {
-		this.topics = topics;
-	}
 
-	public Long getCourseId() {
-		return courseId;
-	}
-
-	public void setCourseId(Long courseId) {
-		this.courseId = courseId;
-	}
-
-	public String getCourseName() {
-		return courseName;
-	}
-
-	public void setCourseName(String courseName) {
-		this.courseName = courseName;
-	}
-
-	public String getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
-	public List<User> getRegisteredUsers() {
-		return registeredUsers;
-	}
-
-	public void setRegisteredUsers(List<User> registeredUsers) {
-		this.registeredUsers = registeredUsers;
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((courseId == null) ? 0 : courseId.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Course other = (Course) obj;
-		if (courseId == null) {
-			if (other.courseId != null)
-				return false;
-		} else if (!courseId.equals(other.courseId))
-			return false;
-		return true;
-	}
 
 }

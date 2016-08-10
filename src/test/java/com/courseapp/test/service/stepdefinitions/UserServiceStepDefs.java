@@ -13,7 +13,7 @@ public class UserServiceStepDefs extends AbstractServiceTestDefs{
 	
 	@When("^client passes user object to service$")
 	public void client_passes_user_object_to_service() throws Throwable {
-		User user = new User(null, "test@gmail.com", "Test", "Test123", null, "Test123#a", null, "1234567890", null, null);
+		User user = User.builder().userName("test@gmail.com").fName("Test").lName("Test123").password("Test123#a").phoneNumber("1234567890").build();
 		userCreated = userService.save(user);
 	}
 

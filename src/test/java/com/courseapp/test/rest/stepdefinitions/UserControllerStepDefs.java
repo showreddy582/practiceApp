@@ -35,7 +35,9 @@ public class UserControllerStepDefs extends AbstractStepDefs {
 
 	@When("^client request POST /user with json data:$")
 	public void client_request_POST_user_with_json_data(String userJson) throws Throwable {
-		User savedUser = new User(1l,"appi.bh@gmail.com","Appi","Bhimavarapu",null,"appi1234",null,null, LocalDateTime.now(), LocalDateTime.now());
+		User savedUser = User.builder().userId(1l).userName("appi.bh@gmail.com").fName("Appi").lName("Bhimavarapu")
+				.password("Appi1234#").createdDate(LocalDateTime.now()).updatedDate(LocalDateTime.now()).build();
+		//User savedUser = new User(1l,"appi.bh@gmail.com","Appi","Bhimavarapu",null,"appi1234",null,null, LocalDateTime.now(), LocalDateTime.now());
 		Mockito.when(userService.save(Mockito.isA(User.class))).thenReturn(savedUser);
 		resultActions = this.mockMvc.perform(post("/user").contentType(contentType).content(userJson));
 	}
