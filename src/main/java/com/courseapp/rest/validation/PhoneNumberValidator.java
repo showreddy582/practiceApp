@@ -3,6 +3,8 @@ package com.courseapp.rest.validation;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+import org.springframework.util.StringUtils;
+
 public class PhoneNumberValidator implements ConstraintValidator<Phone, String> {
 
 	@Override
@@ -11,8 +13,8 @@ public class PhoneNumberValidator implements ConstraintValidator<Phone, String> 
 
 	@Override
 	public boolean isValid(String phoneNo, ConstraintValidatorContext ctx) {
-		if(phoneNo == null){
-			return false;
+		if(StringUtils.isEmpty(phoneNo)){
+			return true;
 		}
 		//validate phone numbers of format "1234567890"
         if (phoneNo.matches("\\d{10}")) return true;

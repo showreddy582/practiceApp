@@ -1,6 +1,7 @@
 package com.courseapp.domain;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +20,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.persistence.Version;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -27,6 +29,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -45,18 +48,23 @@ public class Course implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long courseId;
-	private String courseName;
+	private String name;
 	private String author;
 
 	@Enumerated(EnumType.STRING)
 	private SkillLevel level;
+	private String description;
+	private String prereqs;
+	private BigDecimal fee;
+	private String endGoal;
+	private String type;
 
-	@JsonIgnore
+	@Getter(onMethod = @__( @JsonIgnore ))
 	@ManyToMany(cascade = { CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH })
 	@JoinTable(name = "course_user", joinColumns = @JoinColumn(name = "course_id", referencedColumnName = "courseId"), inverseJoinColumns = @JoinColumn(name = "user_id", referencedColumnName = "userId"))
 	private List<User> registeredUsers = new ArrayList<>();
 
-	@JsonIgnore
+	//@Getter(onMethod = @__( @JsonIgnore ))
 	@OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
 	private List<Topic> topics = new ArrayList<>();
 
@@ -64,6 +72,9 @@ public class Course implements Serializable {
 	
 	@Version
 	private LocalDateTime updatedDate;
+	
+	@Transient
+	private String authorFullName;
 	
 	@PrePersist
 	protected void onCreate(){

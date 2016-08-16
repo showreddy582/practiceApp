@@ -1,5 +1,7 @@
 package com.courseapp.rest;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,6 +40,12 @@ public class CourseController {
 		return new ResponseEntity<Course>(courseService.saveCourse(course), HttpStatus.OK);
 	}
 
+	//get all courses
+	@RequestMapping(method = RequestMethod.GET)
+	public ResponseEntity<List<Course>> getAllCourses() throws Exception {
+		return new ResponseEntity<List<Course>>(courseService.getAllCourses(), HttpStatus.OK);
+	}
+
 	//get course by id
 	@RequestMapping(value="{courseId}",method = RequestMethod.GET)
 	public ResponseEntity<Course> update(@PathVariable("courseId") Long courseId) throws Exception {
@@ -65,18 +73,20 @@ public class CourseController {
 	
 	//add Topic to a course
 	@RequestMapping(value="{courseId}/topic",method = RequestMethod.PUT)
-	public ResponseEntity<Course> addTopicToCourse(@PathVariable("courseId")Long courseId, @RequestBody Topic topic) throws Exception {
-		
+	public ResponseEntity<Course> addTopicToCourse(@PathVariable("courseId")Long courseId, @RequestBody Topic topic) throws Exception {		
 		return new ResponseEntity<Course>(courseService.addTopicToCourse(courseId, topic), HttpStatus.OK);
 	}
 	
 	//remove Topic from a course
 	@RequestMapping(value="{courseId}/topic",method = RequestMethod.DELETE)
-	public ResponseEntity<Course> removeTopicFromACourse(@PathVariable("courseId")Long courseId, @RequestBody Topic topic) throws Exception {
-		
+	public ResponseEntity<Course> removeTopicFromACourse(@PathVariable("courseId")Long courseId, @RequestBody Topic topic) throws Exception {	
 		return new ResponseEntity<Course>(courseService.removeTopicFromCourse(courseId, topic), HttpStatus.OK);
 	}
-
-
+	
+	//get all courses for a user
+	@RequestMapping(value = "user/{userId}", method = RequestMethod.GET)
+	public ResponseEntity<List<Course>> getAllCoursesForaUser(@PathVariable("userId") Long userId)throws Exception {
+		return new ResponseEntity<List<Course>>(courseService.getAllCoursesForUser(userId), HttpStatus.OK);
+	}
 
 }

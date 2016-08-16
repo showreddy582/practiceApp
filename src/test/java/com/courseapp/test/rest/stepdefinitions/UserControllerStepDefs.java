@@ -3,7 +3,7 @@ package com.courseapp.test.rest.stepdefinitions;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -35,8 +35,7 @@ public class UserControllerStepDefs extends AbstractStepDefs {
 
 	@When("^client request POST /user with json data:$")
 	public void client_request_POST_user_with_json_data(String userJson) throws Throwable {
-		User savedUser = User.builder().userId(1l).userName("appi.bh@gmail.com").fName("Appi").lName("Bhimavarapu")
-				.password("Appi1234#").createdDate(LocalDateTime.now()).updatedDate(LocalDateTime.now()).build();
+		User savedUser = User.builder().userId(1l).userName("appi.bh@gmail.com").fName("Appi").lName("Bhimavarapu").password("Appi1234#").dob(LocalDate.of(1984, 9, 19)).build();
 		//User savedUser = new User(1l,"appi.bh@gmail.com","Appi","Bhimavarapu",null,"appi1234",null,null, LocalDateTime.now(), LocalDateTime.now());
 		Mockito.when(userService.save(Mockito.isA(User.class))).thenReturn(savedUser);
 		resultActions = this.mockMvc.perform(post("/user").contentType(contentType).content(userJson));

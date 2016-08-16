@@ -13,8 +13,8 @@ import com.courseapp.service.UserService;
 @DataJpaTest
 @RunWith(SpringRunner.class)
 public abstract class AbstractServiceTestDefs {
-
+	
 	@Autowired
 	protected UserService userService;
-		
+				
 }

@@ -2,7 +2,6 @@ package com.courseapp.domain;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,6 +20,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
@@ -41,9 +41,9 @@ public class Topic implements Serializable {
 	private Long topicId;
 
 	private String name;
-	private LocalTime duration;
+	private String duration;
 
-	@JsonIgnore
+	@Getter(onMethod = @__( @JsonIgnore ))
 	@ManyToOne
 	@JoinColumn(name = "course_id")
 	private Course course;

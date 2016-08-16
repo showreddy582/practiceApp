@@ -1,6 +1,6 @@
 package com.courseapp.rest;
 
-import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import javax.validation.Valid;
 
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.courseapp.domain.Course;
 import com.courseapp.domain.User;
 import com.courseapp.service.UserService;
 
@@ -35,12 +35,29 @@ public class UserController {
 
 	@Autowired
 	private UserService userService;
-
+	
 	//create user
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<User> create(@Valid @RequestBody User user) throws Exception {
 		logger.info("Received request to create the user "+user);
 		return new ResponseEntity<User>(userService.save(user), HttpStatus.CREATED);
+	}
+	
+	@RequestMapping(value="/login",method = RequestMethod.POST)
+	public ResponseEntity<User> login(@RequestBody User user) throws Exception {
+		logger.info("received login request from user with user name " + user.getUserName());
+		User dbUser = userService.findUserByName(user.getUserName());
+		if (dbUser != null) {
+			if (dbUser.getPassword().equals(user.getPassword())) {
+				logger.info("login request succedded for user with user name " + user.getUserName());
+				return new ResponseEntity<User>(dbUser, HttpStatus.OK);
+			} else {
+				logger.error("login request failed for user with user name " + user.getUserName());
+				return new ResponseEntity<User>(user, HttpStatus.FORBIDDEN);
+			}
+		}
+		logger.error("login request failed for user with user name " + user.getUserName());
+		return new ResponseEntity<User>(user, HttpStatus.FORBIDDEN);
 	}
 
 	//update user
@@ -59,8 +76,8 @@ public class UserController {
 	}
 	
 	//get user by userId	
-	@RequestMapping(value = "{userId}", method = RequestMethod.GET)
-	public ResponseEntity<User> getByUserName(@PathVariable("userId") Long userId) throws Exception {
+	@RequestMapping(method = RequestMethod.GET)
+	public ResponseEntity<User> getByUserId(@RequestParam("userId") Long userId) throws Exception {
 		logger.info("Received request to find the user with id "+userId);
 		return new ResponseEntity<User>(userService.findByUserId(userId), HttpStatus.OK);
 	}
@@ -75,12 +92,12 @@ public class UserController {
 
 		return new ResponseEntity<User>(userService.findUserByName(userName), HttpStatus.OK);
 	}
-
-	//get all courses for a user
-	@RequestMapping(value = "courses/{userId}", method = RequestMethod.GET)
-	public ResponseEntity<List<Course>> getAllCoursesForaUser(@PathVariable("userId") Long userId)throws Exception {
-		logger.info("Received request to get all the courses for the user with userId "+userId);
-		return new ResponseEntity<List<Course>>(userService.findByUserId(userId).getCourses(), HttpStatus.OK);
+	
+	@RequestMapping(value = "checkIfExists", method = RequestMethod.POST)
+	public ResponseEntity<Boolean> checkIfExists(@RequestParam("userName") String userName) throws Exception {
+		TimeUnit.SECONDS.sleep(5);
+		return new ResponseEntity<Boolean>(userService.findUserByName(userName) != null, HttpStatus.OK);
 	}
+	
 
 }
