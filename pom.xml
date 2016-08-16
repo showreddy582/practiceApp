@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.disney</groupId>
-	<artifactId>eventsApp</artifactId>
+	<groupId>com.jnit</groupId>
+	<artifactId>courseApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
-	<name>practiceApp</name>
-	<description>Demo project for Spring Boot</description>
+	<name>courseApp</name>
+	<description>Course app spring boot application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -25,6 +25,7 @@
 		<cucumber-java.version>1.1.7</cucumber-java.version>
 		<cucumber-pro.version>1.0.6</cucumber-pro.version>
 		<xml-apis.version>1.4.01</xml-apis.version>
+		<docker.image.prefix>docker-courseApp</docker.image.prefix>
 	</properties>
 
 	<dependencies>
@@ -115,10 +116,27 @@
 	</dependencies>
 
 	<build>
+		<finalName>courseApp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.2.3</version>
+				<configuration>
+					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+					<dockerDirectory>src/main/docker</dockerDirectory>
+					<resources>
+						<resource>
+							<targetPath>/</targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.jar</include>
+						</resource>
+					</resources>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
