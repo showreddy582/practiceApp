@@ -25,6 +25,7 @@
 		<cucumber-java.version>1.1.7</cucumber-java.version>
 		<cucumber-pro.version>1.0.6</cucumber-pro.version>
 		<xml-apis.version>1.4.01</xml-apis.version>
+		<!-- user name for docker hub account -->
 		<docker.image.prefix>docker-courseApp</docker.image.prefix>
 	</properties>
 
@@ -127,7 +128,8 @@
 				<artifactId>docker-maven-plugin</artifactId>
 				<version>0.2.3</version>
 				<configuration>
-					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+					<!--  <imageName>${docker.image.prefix}/${project.artifactId}</imageName>-->
+					<imageName>${project.artifactId}</imageName>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>

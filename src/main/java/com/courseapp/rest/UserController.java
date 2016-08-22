@@ -1,5 +1,6 @@
 package com.courseapp.rest;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import javax.validation.Valid;
@@ -92,7 +93,13 @@ public class UserController {
 
 		return new ResponseEntity<User>(userService.findUserByName(userName), HttpStatus.OK);
 	}
-	
+
+	//get all users	
+	@RequestMapping(value = "/all", method = RequestMethod.GET)
+	public ResponseEntity<List<User>> getAll() throws Exception {
+		return new ResponseEntity<List<User>>(userService.findAll(), HttpStatus.OK);
+	}
+
 	@RequestMapping(value = "checkIfExists", method = RequestMethod.POST)
 	public ResponseEntity<Boolean> checkIfExists(@RequestParam("userName") String userName) throws Exception {
 		TimeUnit.SECONDS.sleep(5);
