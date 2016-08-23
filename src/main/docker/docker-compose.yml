@@ -1,13 +1,13 @@
 courseapp-mysql:
   image: mysql:latest
   environment:
-    - MYSQL_ROOT_PASSWORD=
+    - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=coursedb
     - MYSQL_USER=dbuser
     - MYSQL_PASSWORD=dbp4ss
 
 courseApp:
-  image: courseApp
+  image: courseapp
   links:
     - courseapp-mysql:mysql
   ports:

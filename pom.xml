@@ -117,7 +117,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>courseApp</finalName>
+		<finalName>courseapp</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -126,10 +126,10 @@
 			<plugin>
 				<groupId>com.spotify</groupId>
 				<artifactId>docker-maven-plugin</artifactId>
-				<version>0.2.3</version>
+				<version>0.4.11</version>
 				<configuration>
 					<!--  <imageName>${docker.image.prefix}/${project.artifactId}</imageName>-->
-					<imageName>${project.artifactId}</imageName>
+					<imageName>${project.build.finalName}</imageName>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
