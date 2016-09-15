@@ -48,7 +48,7 @@ public class CourseController {
 
 	//get course by id
 	@RequestMapping(value="{courseId}",method = RequestMethod.GET)
-	public ResponseEntity<Course> update(@PathVariable("courseId") Long courseId) throws Exception {
+	public ResponseEntity<Course> getCourseById(@PathVariable("courseId") Long courseId) throws Exception {
 		return new ResponseEntity<Course>(courseService.getCourseById(courseId), HttpStatus.OK);
 	}
 

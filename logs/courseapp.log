@@ -1,140 +1,296 @@
-2016-08-19 09:07:30.033  INFO 66811 --- [http-nio-8080-exec-4] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:07:30.979 ERROR 66811 --- [http-nio-8080-exec-4] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:07:42.163  INFO 66811 --- [http-nio-8080-exec-6] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:07:42.202 ERROR 66811 --- [http-nio-8080-exec-6] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:09:00.800  INFO 66811 --- [http-nio-8080-exec-10] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:09:00.807 ERROR 66811 --- [http-nio-8080-exec-10] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:09:07.577  INFO 66811 --- [http-nio-8080-exec-3] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:09:07.586 ERROR 66811 --- [http-nio-8080-exec-3] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:10:57.627  INFO 66811 --- [http-nio-8080-exec-4] com.courseapp.rest.UserController        : received login request from user with user name appi.bh@gmail.com
-2016-08-19 09:10:57.652 ERROR 66811 --- [http-nio-8080-exec-4] com.courseapp.rest.UserController        : login request failed for user with user name appi.bh@gmail.com
-2016-08-19 09:12:14.575  INFO 66811 --- [http-nio-8080-exec-9] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:12:14.587 ERROR 66811 --- [http-nio-8080-exec-9] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:14:03.906  INFO 66811 --- [http-nio-8080-exec-1] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:14:03.936 ERROR 66811 --- [http-nio-8080-exec-1] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:14:36.806  INFO 66811 --- [http-nio-8080-exec-2] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:14:36.817 ERROR 66811 --- [http-nio-8080-exec-2] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:18:47.792  INFO 66811 --- [http-nio-8080-exec-7] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:18:47.825 ERROR 66811 --- [http-nio-8080-exec-7] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:20:25.742  INFO 66811 --- [http-nio-8080-exec-8] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:20:25.762 ERROR 66811 --- [http-nio-8080-exec-8] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:23:06.584  INFO 66811 --- [http-nio-8080-exec-3] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:23:06.622 ERROR 66811 --- [http-nio-8080-exec-3] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 09:23:31.199  INFO 66811 --- [http-nio-8080-exec-5] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:23:31.224  INFO 66811 --- [http-nio-8080-exec-5] com.courseapp.rest.UserController        : login request succedded for user with user name bhiapp4@gmail.com
-2016-08-19 09:24:22.905  INFO 66811 --- [http-nio-8080-exec-10] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:24:22.935  INFO 66811 --- [http-nio-8080-exec-10] com.courseapp.rest.UserController        : login request succedded for user with user name bhiapp4@gmail.com
-2016-08-19 09:24:59.027  INFO 66811 --- [http-nio-8080-exec-5] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:24:59.039  INFO 66811 --- [http-nio-8080-exec-5] com.courseapp.rest.UserController        : login request succedded for user with user name bhiapp4@gmail.com
-2016-08-19 09:27:26.847  INFO 66811 --- [http-nio-8080-exec-1] com.courseapp.rest.UserController        : received login request from user with user name bhiapp4@gmail.com
-2016-08-19 09:27:26.880 ERROR 66811 --- [http-nio-8080-exec-1] com.courseapp.rest.UserController        : login request failed for user with user name bhiapp4@gmail.com
-2016-08-19 16:09:35.732  INFO 78156 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 78156 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
-2016-08-19 16:09:35.746  INFO 78156 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
-2016-08-19 16:09:36.172  INFO 78156 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736d6a5c: startup date [Fri Aug 19 16:09:36 CDT 2016]; root of context hierarchy
-2016-08-19 16:09:40.262  INFO 78156 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f54ee577] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-08-19 16:09:42.022  INFO 78156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
-2016-08-19 16:09:42.065  INFO 78156 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2016-08-19 16:09:42.068  INFO 78156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
-2016-08-19 16:09:42.483  INFO 78156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2016-08-19 16:09:42.484  INFO 78156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6313 ms
-2016-08-19 16:09:43.072  INFO 78156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2016-08-19 16:09:43.089  INFO 78156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2016-08-19 16:09:43.091  INFO 78156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2016-08-19 16:09:43.091  INFO 78156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2016-08-19 16:09:43.092  INFO 78156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2016-08-19 16:09:44.093  INFO 78156 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2016-08-19 16:09:44.170  INFO 78156 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2016-09-15 10:19:02.394  INFO 20718 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 20718 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-09-15 10:19:02.407  INFO 20718 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-09-15 10:19:02.654  INFO 20718 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@762ef0ea: startup date [Thu Sep 15 10:19:02 CDT 2016]; root of context hierarchy
+2016-09-15 10:19:07.285  INFO 20718 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a766d08d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-15 10:19:08.707  INFO 20718 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-09-15 10:19:08.744  INFO 20718 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-15 10:19:08.749  INFO 20718 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-15 10:19:09.044  INFO 20718 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-15 10:19:09.045  INFO 20718 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6391 ms
+2016-09-15 10:19:09.422  INFO 20718 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-15 10:19:09.438  INFO 20718 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-15 10:19:09.439  INFO 20718 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-15 10:19:09.440  INFO 20718 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-15 10:19:09.441  INFO 20718 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-15 10:19:10.566  INFO 20718 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-15 10:19:10.625  INFO 20718 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2016-08-19 16:09:44.644  INFO 78156 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
-2016-08-19 16:09:44.654  INFO 78156 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2016-08-19 16:09:44.661  INFO 78156 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2016-08-19 16:09:45.024  INFO 78156 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2016-08-19 16:09:46.852  INFO 78156 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2016-08-19 16:09:48.546  INFO 78156 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2016-08-19 16:09:50.494  INFO 78156 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2016-08-19 16:09:51.325  INFO 78156 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2016-08-19 16:09:53.177  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736d6a5c: startup date [Fri Aug 19 16:09:36 CDT 2016]; root of context hierarchy
-2016-08-19 16:09:53.464  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.466  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(com.courseapp.domain.Course) throws java.lang.Exception
-2016-08-19 16:09:53.467  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.CourseController.delete(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.468  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.create(com.courseapp.domain.Course) throws java.lang.Exception
-2016-08-19 16:09:53.468  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCourses() throws java.lang.Exception
-2016-08-19 16:09:53.469  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addUserToCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.471  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeUserFromCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.472  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addTopicToCourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
-2016-08-19 16:09:53.473  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeTopicFromACourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
-2016-08-19 16:09:53.474  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/user/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCoursesForaUser(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.485  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.update(com.courseapp.domain.User) throws java.lang.Exception
-2016-08-19 16:09:53.486  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.UserController.delete(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.487  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.create(com.courseapp.domain.User) throws java.lang.Exception
-2016-08-19 16:09:53.488  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.login(com.courseapp.domain.User) throws java.lang.Exception
-2016-08-19 16:09:53.489  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserId(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:09:53.490  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.String) throws java.lang.Exception
-2016-08-19 16:09:53.491  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkIfExists],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Boolean> com.courseapp.rest.UserController.checkIfExists(java.lang.String) throws java.lang.Exception
-2016-08-19 16:09:53.498  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2016-08-19 16:09:53.499  INFO 78156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2016-08-19 16:09:53.654  INFO 78156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-08-19 16:09:53.655  INFO 78156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-08-19 16:09:53.719  INFO 78156 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorHandlingAdvice
-2016-08-19 16:09:53.892  INFO 78156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-08-19 16:09:55.472  INFO 78156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2016-08-19 16:09:55.773  INFO 78156 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
-2016-08-19 16:09:55.793  INFO 78156 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 21.876 seconds (JVM running for 25.385)
-2016-08-19 16:12:12.296  INFO 78174 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 78174 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
-2016-08-19 16:12:12.306  INFO 78174 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
-2016-08-19 16:12:12.557  INFO 78174 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736d6a5c: startup date [Fri Aug 19 16:12:12 CDT 2016]; root of context hierarchy
-2016-08-19 16:12:16.335  INFO 78174 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8fadf88c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2016-08-19 16:12:17.960  INFO 78174 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
-2016-08-19 16:12:17.997  INFO 78174 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
-2016-08-19 16:12:18.000  INFO 78174 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
-2016-08-19 16:12:18.294  INFO 78174 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2016-08-19 16:12:18.295  INFO 78174 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5738 ms
-2016-08-19 16:12:18.875  INFO 78174 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
-2016-08-19 16:12:18.887  INFO 78174 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
-2016-08-19 16:12:18.888  INFO 78174 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2016-08-19 16:12:18.889  INFO 78174 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
-2016-08-19 16:12:18.890  INFO 78174 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-2016-08-19 16:12:19.730  INFO 78174 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
-2016-08-19 16:12:19.766  INFO 78174 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2016-09-15 10:19:10.949  INFO 20718 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-09-15 10:19:10.953  INFO 20718 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-15 10:19:10.958  INFO 20718 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-15 10:19:11.121  INFO 20718 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-15 10:19:11.861 ERROR 20718 --- [main] o.a.tomcat.jdbc.pool.ConnectionPool      : Unable to create initial connections of pool.
+
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:988)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2251)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2284)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2083)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:806)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:410)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:328)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:716)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:648)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:468)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:143)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:234)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:208)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:217)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at com.courseapp.config.PracticeAppApplication.main(PracticeAppApplication.java:29)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300)
+	... 59 common frames omitted
+
+2016-09-15 10:19:11.866  WARN 20718 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2016-09-15 10:19:11.872  WARN 20718 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2016-09-15 10:19:11.877  INFO 20718 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2016-09-15 10:19:11.913  INFO 20718 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2016-09-15 10:19:11.949 ERROR 20718 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:851)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174)
+	at com.courseapp.config.PracticeAppApplication.main(PracticeAppApplication.java:29)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:244)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:208)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:217)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:338)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:373)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:362)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:234)
+	... 32 common frames omitted
+
+2016-09-15 10:20:01.418  INFO 20820 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 20820 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-09-15 10:20:01.442  INFO 20820 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-09-15 10:20:01.670  INFO 20820 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ead359: startup date [Thu Sep 15 10:20:01 CDT 2016]; root of context hierarchy
+2016-09-15 10:20:10.036  INFO 20820 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b8a71603] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-15 10:20:12.146  INFO 20820 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-09-15 10:20:12.184  INFO 20820 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-15 10:20:12.187  INFO 20820 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-15 10:20:12.467  INFO 20820 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-15 10:20:12.468  INFO 20820 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 10798 ms
+2016-09-15 10:20:12.874  INFO 20820 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-15 10:20:12.884  INFO 20820 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-15 10:20:12.885  INFO 20820 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-15 10:20:12.886  INFO 20820 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-15 10:20:12.886  INFO 20820 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-15 10:20:13.694  INFO 20820 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-15 10:20:13.746  INFO 20820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2016-08-19 16:12:20.006  INFO 78174 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
-2016-08-19 16:12:20.012  INFO 78174 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2016-08-19 16:12:20.017  INFO 78174 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
-2016-08-19 16:12:20.155  INFO 78174 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-2016-08-19 16:12:21.689  INFO 78174 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2016-08-19 16:12:23.174  INFO 78174 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
-2016-08-19 16:12:24.814  INFO 78174 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2016-08-19 16:12:25.499  INFO 78174 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-2016-08-19 16:12:27.380  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736d6a5c: startup date [Fri Aug 19 16:12:12 CDT 2016]; root of context hierarchy
-2016-08-19 16:12:27.667  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.669  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(com.courseapp.domain.Course) throws java.lang.Exception
-2016-08-19 16:12:27.671  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.CourseController.delete(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.672  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.create(com.courseapp.domain.Course) throws java.lang.Exception
-2016-08-19 16:12:27.673  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCourses() throws java.lang.Exception
-2016-08-19 16:12:27.674  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addUserToCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.675  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeUserFromCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.676  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addTopicToCourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
-2016-08-19 16:12:27.677  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeTopicFromACourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
-2016-08-19 16:12:27.678  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/user/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCoursesForaUser(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.692  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.update(com.courseapp.domain.User) throws java.lang.Exception
-2016-08-19 16:12:27.693  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.UserController.delete(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.694  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.create(com.courseapp.domain.User) throws java.lang.Exception
-2016-08-19 16:12:27.696  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.login(com.courseapp.domain.User) throws java.lang.Exception
-2016-08-19 16:12:27.697  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserId(java.lang.Long) throws java.lang.Exception
-2016-08-19 16:12:27.698  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.String) throws java.lang.Exception
-2016-08-19 16:12:27.699  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkIfExists],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Boolean> com.courseapp.rest.UserController.checkIfExists(java.lang.String) throws java.lang.Exception
-2016-08-19 16:12:27.700  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/all],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.User>> com.courseapp.rest.UserController.getAll() throws java.lang.Exception
-2016-08-19 16:12:27.704  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2016-08-19 16:12:27.705  INFO 78174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2016-08-19 16:12:27.846  INFO 78174 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-08-19 16:12:27.847  INFO 78174 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-08-19 16:12:27.973  INFO 78174 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorHandlingAdvice
-2016-08-19 16:12:28.152  INFO 78174 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2016-08-19 16:12:29.781  INFO 78174 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
-2016-08-19 16:12:29.989  INFO 78174 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
-2016-08-19 16:12:30.012  INFO 78174 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 18.886 seconds (JVM running for 20.05)
-2016-08-19 16:12:49.100  INFO 78174 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
-2016-08-19 16:12:49.102  INFO 78174 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
-2016-08-19 16:12:49.209  INFO 78174 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 107 ms
+2016-09-15 10:20:13.999  INFO 20820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-09-15 10:20:14.004  INFO 20820 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-15 10:20:14.012  INFO 20820 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-15 10:20:14.151  INFO 20820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-15 10:20:15.711  INFO 20820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-09-15 10:20:17.190  INFO 20820 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-09-15 10:20:18.825  INFO 20820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-09-15 10:20:19.595  INFO 20820 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-09-15 10:20:21.840  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.843  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(com.courseapp.domain.Course) throws java.lang.Exception
+2016-09-15 10:20:21.844  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.CourseController.delete(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.845  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.create(com.courseapp.domain.Course) throws java.lang.Exception
+2016-09-15 10:20:21.846  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCourses() throws java.lang.Exception
+2016-09-15 10:20:21.847  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addUserToCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.848  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeUserFromCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.849  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addTopicToCourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-09-15 10:20:21.850  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeTopicFromACourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-09-15 10:20:21.851  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/user/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCoursesForaUser(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.860  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.update(com.courseapp.domain.User) throws java.lang.Exception
+2016-09-15 10:20:21.861  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.UserController.delete(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.862  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.create(com.courseapp.domain.User) throws java.lang.Exception
+2016-09-15 10:20:21.863  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.login(com.courseapp.domain.User) throws java.lang.Exception
+2016-09-15 10:20:21.866  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserId(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:20:21.866  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.String) throws java.lang.Exception
+2016-09-15 10:20:21.868  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkIfExists],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Boolean> com.courseapp.rest.UserController.checkIfExists(java.lang.String) throws java.lang.Exception
+2016-09-15 10:20:21.869  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/all],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.User>> com.courseapp.rest.UserController.getAll() throws java.lang.Exception
+2016-09-15 10:20:21.870  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-09-15 10:20:21.876  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-15 10:20:21.877  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-15 10:20:21.879  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-15 10:20:21.884  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-15 10:20:21.885  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-15 10:20:22.659  INFO 20820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ead359: startup date [Thu Sep 15 10:20:01 CDT 2016]; root of context hierarchy
+2016-09-15 10:20:22.861  INFO 20820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-15 10:20:22.862  INFO 20820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-15 10:20:22.906  INFO 20820 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorHandlingAdvice
+2016-09-15 10:20:22.984  INFO 20820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-15 10:20:24.018  INFO 20820 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-15 10:20:24.051  INFO 20820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-15 10:20:24.111  INFO 20820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2016-09-15 10:20:24.133  INFO 20820 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-15 10:20:24.860  INFO 20820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2016-09-15 10:20:24.866  INFO 20820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2016-09-15 10:20:24.921  INFO 20820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2016-09-15 10:20:25.201  INFO 20820 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-09-15 10:20:25.230  INFO 20820 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 24.929 seconds (JVM running for 26.645)
+2016-09-15 10:21:18.330  INFO 20820 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-15 10:21:18.334  INFO 20820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-15 10:21:18.841  INFO 20820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 507 ms
+2016-09-15 10:39:19.006  INFO 21285 --- [main] c.c.config.PracticeAppApplication        : Starting PracticeAppApplication on Appis-Air.fios-router.home with PID 21285 (/Users/appi_usa/Desktop/charanws/practiceApp/target/classes started by appi_usa in /Users/appi_usa/Desktop/charanws/practiceApp)
+2016-09-15 10:39:19.019  INFO 21285 --- [main] c.c.config.PracticeAppApplication        : No active profile set, falling back to default profiles: default
+2016-09-15 10:39:19.292  INFO 21285 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ead359: startup date [Thu Sep 15 10:39:19 CDT 2016]; root of context hierarchy
+2016-09-15 10:39:23.393  INFO 21285 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca2ef112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-09-15 10:39:25.225  INFO 21285 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2016-09-15 10:39:25.258  INFO 21285 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-15 10:39:25.260  INFO 21285 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-15 10:39:25.503  INFO 21285 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-15 10:39:25.504  INFO 21285 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6212 ms
+2016-09-15 10:39:25.898  INFO 21285 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-15 10:39:25.911  INFO 21285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-15 10:39:25.913  INFO 21285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-15 10:39:25.914  INFO 21285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-15 10:39:25.914  INFO 21285 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-15 10:39:26.600  INFO 21285 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-09-15 10:39:26.642  INFO 21285 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-09-15 10:39:26.896  INFO 21285 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.9.Final}
+2016-09-15 10:39:26.900  INFO 21285 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-09-15 10:39:26.909  INFO 21285 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-09-15 10:39:27.036  INFO 21285 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-09-15 10:39:28.376  INFO 21285 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-09-15 10:39:30.792  INFO 21285 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2016-09-15 10:39:32.807  INFO 21285 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-09-15 10:39:33.827  INFO 21285 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2016-09-15 10:39:36.865  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.update(com.courseapp.domain.Course) throws java.lang.Exception
+2016-09-15 10:39:36.871  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.CourseController.delete(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.872  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.create(com.courseapp.domain.Course) throws java.lang.Exception
+2016-09-15 10:39:36.875  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCourses() throws java.lang.Exception
+2016-09-15 10:39:36.876  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.getCourseById(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.877  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addUserToCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.879  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/users/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeUserFromCourse(java.lang.Long,java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.880  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.addTopicToCourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-09-15 10:39:36.882  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/{courseId}/topic],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.Course> com.courseapp.rest.CourseController.removeTopicFromACourse(java.lang.Long,com.courseapp.domain.Topic) throws java.lang.Exception
+2016-09-15 10:39:36.883  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/course/user/{userId}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.Course>> com.courseapp.rest.CourseController.getAllCoursesForaUser(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.906  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.update(com.courseapp.domain.User) throws java.lang.Exception
+2016-09-15 10:39:36.908  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userId}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<org.springframework.http.HttpStatus> com.courseapp.rest.UserController.delete(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.910  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.create(com.courseapp.domain.User) throws java.lang.Exception
+2016-09-15 10:39:36.912  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/all],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.courseapp.domain.User>> com.courseapp.rest.UserController.getAll() throws java.lang.Exception
+2016-09-15 10:39:36.913  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.login(com.courseapp.domain.User) throws java.lang.Exception
+2016-09-15 10:39:36.914  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserId(java.lang.Long) throws java.lang.Exception
+2016-09-15 10:39:36.915  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/{userName}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<com.courseapp.domain.User> com.courseapp.rest.UserController.getByUserName(java.lang.String) throws java.lang.Exception
+2016-09-15 10:39:36.916  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/checkIfExists],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Boolean> com.courseapp.rest.UserController.checkIfExists(java.lang.String) throws java.lang.Exception
+2016-09-15 10:39:36.919  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2016-09-15 10:39:36.930  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2016-09-15 10:39:36.933  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2016-09-15 10:39:36.935  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2016-09-15 10:39:36.943  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-15 10:39:36.944  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-15 10:39:38.061  INFO 21285 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@68ead359: startup date [Thu Sep 15 10:39:19 CDT 2016]; root of context hierarchy
+2016-09-15 10:39:38.474  INFO 21285 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-15 10:39:38.476  INFO 21285 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-15 10:39:38.533  INFO 21285 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in errorHandlingAdvice
+2016-09-15 10:39:38.638  INFO 21285 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-15 10:39:41.701  INFO 21285 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-15 10:39:41.770  INFO 21285 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2016-09-15 10:39:41.875  INFO 21285 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2016-09-15 10:39:41.915  INFO 21285 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2016-09-15 10:39:42.921  INFO 21285 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: createUsingPOST_1
+2016-09-15 10:39:42.934  INFO 21285 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2016-09-15 10:39:43.006  INFO 21285 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2016-09-15 10:39:43.232  INFO 21285 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2016-09-15 10:39:43.276  INFO 21285 --- [main] c.c.config.PracticeAppApplication        : Started PracticeAppApplication in 25.47 seconds (JVM running for 27.294)
+2016-09-15 10:39:58.236  INFO 21285 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-09-15 10:39:58.239  INFO 21285 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2016-09-15 10:39:58.310  INFO 21285 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 70 ms
