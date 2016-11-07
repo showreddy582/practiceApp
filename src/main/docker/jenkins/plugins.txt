@@ -1,3 +1,4 @@
+junit:latest
 git:latest
 git-client:latest
 git-server:latest
@@ -30,6 +31,7 @@ pipeline-rest-api:latest
 icon-shim:latest
 async-http-client:latest
 structs:latest
+display-url-api:latest
 credentials:latest
 plain-credentials:latest
 ssh-credentials:latest
