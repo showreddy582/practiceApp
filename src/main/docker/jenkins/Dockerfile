@@ -18,7 +18,7 @@ ARG DOCKER_GID=497
 RUN groupadd -g ${DOCKER_GID:-497} docker
 
 # Used to control Docker and Docker Compose versions installed
-# NOTE: As of August 2016, AWS Linux ECS only supports Docker 1.10.2
+# NOTE: As of August 2016, AWS Linux ECS only supports Docker 1.11.2
 ARG DOCKER_ENGINE=1.11.2
 ARG DOCKER_COMPOSE=1.6.2
 
