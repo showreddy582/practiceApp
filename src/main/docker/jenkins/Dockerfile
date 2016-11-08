@@ -19,7 +19,7 @@ RUN groupadd -g ${DOCKER_GID:-497} docker
 
 # Used to control Docker and Docker Compose versions installed
 # NOTE: As of August 2016, AWS Linux ECS only supports Docker 1.10.2
-ARG DOCKER_ENGINE=1.10.2
+ARG DOCKER_ENGINE=1.11.2
 ARG DOCKER_COMPOSE=1.6.2
 
 # Install base packages
@@ -32,7 +32,7 @@ RUN apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 58118E89F3A912897C0
     echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" | tee /etc/apt/sources.list.d/docker.list && \
     apt-get update -y && \
     apt-get purge lxc-docker* -y && \
-    apt-get install docker-engine=${DOCKER_ENGINE:-1.10.2}-0~trusty -y && \
+    apt-get install docker-engine=${DOCKER_ENGINE:-1.11.2}-0~trusty -y && \
     usermod -aG docker jenkins && \
     usermod -aG users jenkins
 
