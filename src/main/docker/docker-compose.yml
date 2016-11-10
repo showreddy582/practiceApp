@@ -7,7 +7,7 @@ courseapp-mysql:
     - MYSQL_PASSWORD=dbp4ss
 
 courseApp:
-  image: coursebackend
+  image: courseapp
   links:
     - courseapp-mysql:mysql:latest
   ports:

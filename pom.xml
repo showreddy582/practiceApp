@@ -148,7 +148,7 @@
 				</executions>
 				<configuration>
 					<serverId>docker-hub</serverId>
-					<imageName>${docker.image.prefix}/coursebackend</imageName>
+					<imageName>${docker.image.prefix}/courseapp</imageName>
 					<dockerDirectory>src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
