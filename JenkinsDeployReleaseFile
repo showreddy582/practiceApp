@@ -20,7 +20,7 @@ node {
    //step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
    stage 'Deploy release'
    def imageTag = 'appibh/courseapp:latest'
-   build job: "CourseApp AWS Deploy", parameters:[[
+   build job: "CourseAppAWSDeploy", parameters:[[
    	$class: 'StringParameterValue',
    	name: 'IMAGE_TAG',
    	value: imageTag
