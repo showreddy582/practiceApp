@@ -67,7 +67,7 @@ public class CourseService {
 		User user = userRepository.findOne(userId);
 		course.getRegisteredUsers().add(user);
 		Course savedCourse = courseRepository.save(course);
-		emailService.sendemail(user.getUserName(), "Course Application Notification", "You have successsfully registered for "+ savedCourse.getName());
+		//emailService.sendemail(user.getUserName(), "Course Application Notification", "You have successsfully registered for "+ savedCourse.getName());
 		return savedCourse;
 	}
 

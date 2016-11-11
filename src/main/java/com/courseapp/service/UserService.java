@@ -41,10 +41,10 @@ public class UserService {
 				throw new UserNotFoundException("User with " + user.getUserId() + "Not found");
 			}
 		}
-		String text = user.getUserId() == null ? "You enrollment with course application is successfull. Start registering for courses"
-				: "Your changes to your account is successfull";
+		//String text = user.getUserId() == null ? "You enrollment with course application is successfull. Start registering for courses"
+			//	: "Your changes to your account is successfull";
 		User dbUser = userRepository.save(user);
-		emailService.sendemail(dbUser.getUserName(), "Course Application Notification", text);
+		//emailService.sendemail(dbUser.getUserName(), "Course Application Notification", text);
 		return dbUser;
 	}
 
