@@ -1,5 +1,5 @@
 node {
-   // Mark the code checkout 'stage'....
+   // Mark the code checkout 'stage'.....
    stage 'Checkout'
    
    checkout scm	
