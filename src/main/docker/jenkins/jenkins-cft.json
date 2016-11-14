@@ -128,7 +128,7 @@
         "ContainerDefinitions" : [ 
           {
             "Name": "jenkins",
-            "Image": "appibh/jenkins",
+            "Image": "appibh/jenkins1",
             "Memory": 995,
             "PortMappings": [ { "ContainerPort": 8080, "HostPort": 8080 } ],
             "MountPoints": [
