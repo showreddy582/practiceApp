@@ -12,6 +12,7 @@ import com.courseapp.service.UserService;
 @ContextConfiguration(classes = PracticeAppApplication.class)
 @DataJpaTest
 @RunWith(SpringRunner.class)
+//@WebAppConfiguration
 public abstract class AbstractServiceTestDefs {
 	
 	@Autowired
