@@ -20,4 +20,9 @@ public class HealthCheckController {
 		return new ResponseEntity<String>("hello Appi", HttpStatus.OK);
 	}
 
+	@RequestMapping(method = RequestMethod.GET, value="/sayBye")
+	public ResponseEntity<String> sayBye() {
+		return new ResponseEntity<String>("By Appi.. leave this folks alone please..", HttpStatus.OK);
+	}
+
 }
