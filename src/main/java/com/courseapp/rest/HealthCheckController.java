@@ -14,4 +14,10 @@ public class HealthCheckController {
 	public ResponseEntity<HttpStatus> checkHealth() {
 		return new ResponseEntity<HttpStatus>(HttpStatus.OK);
 	}
+
+	@RequestMapping(method = RequestMethod.GET, value="/sayHello")
+	public ResponseEntity<String> sayHello() {
+		return new ResponseEntity<String>("hello Appi", HttpStatus.OK);
+	}
+
 }
