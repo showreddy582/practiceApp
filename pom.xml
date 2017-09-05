@@ -26,7 +26,7 @@
 		<cucumber-pro.version>1.0.6</cucumber-pro.version>
 		<xml-apis.version>1.4.01</xml-apis.version>
 		<!-- user name for docker hub account -->
-		<docker.image.prefix>appibh</docker.image.prefix>
+		<docker.image.prefix>showreddy</docker.image.prefix>
 	</properties>
 
 	<dependencies>
